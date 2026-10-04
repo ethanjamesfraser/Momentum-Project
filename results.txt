@@ -1,0 +1,50 @@
+Downloaded prices for all 20 tickers.
+
+Sample: Feb 2016 to Sep 2026 (128 months); costs 10 bp per dollar traded
+
+PERFORMANCE
+                                Momentum (net)  ...  WML (gross)
+Months                               128.0000  ...     128.0000
+Average monthly return                 0.0372  ...       0.0164
+Annualised return (geometric)          0.4870  ...       0.1455
+Annualised volatility                  0.3135  ...       0.3580
+Sharpe ratio                           1.3546  ...       0.5492
+Maximum drawdown                      -0.2323  ...      -0.4822
+Positive-month rate                    0.6484  ...       0.5469
+Best month                             0.6092  ...       0.5934
+Worst month                           -0.1782  ...      -0.2463
+
+[9 rows x 6 columns]
+
+SIGNIFICANCE TESTS (H0: mean = 0)
+                  WML (winners - losers)  ...  Momentum net - SPY
+Mean monthly                     0.0164  ...              0.0242
+Annualised mean                  0.1966  ...              0.2901
+t-stat                           1.7935  ...              3.8396
+Months                         128.0000  ...            128.0000
+
+[4 rows x 3 columns]
+
+CAPM REGRESSIONS vs SPY
+                     Momentum (net)  EW universe     WML
+Alpha (monthly)             0.0205       0.0063  0.0121
+Alpha (annualised)          0.2458       0.0750  0.1448
+Alpha t-stat                3.2015       3.6853  1.2787
+Beta                        1.3299       1.0961  0.2180
+Beta t-stat                 9.2476      28.7412  1.0280
+R-squared                   0.4043       0.8677  0.0083
+
+Average one-way monthly turnover: 24.5%
+
+ROBUSTNESS
+  Lookback (months)  Top fraction  Sharpe (net)  Ann. return (net)  WML annualised mean  WML t-stat  Avg one-way turnover
+                 3           0.2         1.168              0.336                0.139       1.667                 0.611
+                 3           0.3         1.286              0.319                0.110       1.678                 0.528
+                 6           0.2         1.164              0.362                0.090       0.911                 0.373
+                 6           0.3         0.990              0.250                0.005       0.077                 0.313
+                 9           0.2         1.200              0.381                0.119       1.167                 0.302
+                 9           0.3         1.155              0.305                0.057       0.815                 0.253
+                12           0.2         1.355              0.487                0.197       1.794                 0.245
+                12           0.3         1.331              0.371                0.104       1.380                 0.222
+
+Tables saved to outputs/, charts saved to figures/
